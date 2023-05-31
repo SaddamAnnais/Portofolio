@@ -1,0 +1,40 @@
+import { createTheme } from "@mui/material/styles";
+import { red } from "@mui/material/colors";
+import { chillPixel, publicPixel } from "./font/font";
+
+// Create a theme instance.
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#D9D9D9",
+    },
+    background: {
+      default: "#11324A",
+      paper: "#16405F",
+    },
+    error: {
+      main: red.A400,
+    },
+  },
+  typography: {
+    fontFamily: [chillPixel.style.fontFamily, publicPixel.style.fontFamily],
+  },
+  shadow: "None",
+  components: {
+    MuiButton: {
+      defaultProps: {
+        disableRipple: true, 
+        disableElevation: true,
+      },
+      styleOverrides: {
+        root: {
+          "&:hover" : {
+            backgroundColor: "transparent",
+          },
+        }
+      }
+    }
+  },
+});
+
+export default theme;
