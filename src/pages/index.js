@@ -1,4 +1,4 @@
-import Headbar from "@/components/Content/Headbar";
+import Headbar from "@/components/Content/Headbar/Headbar";
 import Navbar from "@/components/Navbar";
 import { chillPixel } from "@/font/font";
 import { Box, Stack, Typography } from "@mui/material";
@@ -15,11 +15,9 @@ export default function Home() {
 
       <main>
         <Navbar />
-        {/* <Box display="flex" justifyContent="center" alignItems="center"> */}
           <Stack spacing={3} width="100%">
             <Headbar />
           </Stack>
-        {/* </Box> */}
       </main>
     </>
   );

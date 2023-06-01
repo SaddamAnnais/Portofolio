@@ -1,5 +1,6 @@
 import { publicPixel } from "@/font/font";
 import { Box, Grid, Stack, Typography } from "@mui/material";
+import PhotoPixel from "./PhotoPixel";
 
 const Headbar = () => {
   return (
@@ -8,7 +9,7 @@ const Headbar = () => {
       spacing={2}
       maxWidth={{ xs: "100%", md: "85%", lg: "70%" }}
       margin="auto"
-      mt="10rem"
+      mt="3rem"
     >
       <Grid item xs={7}>
         <Stack
@@ -16,6 +17,7 @@ const Headbar = () => {
           direction="column"
           alignItems="flex-start"
           justifyContent="center"
+          height="100%"
         >
           <Typography variant="h5" component="h1" color="primary.main">
             Hi there,
@@ -38,7 +40,7 @@ const Headbar = () => {
         </Stack>
       </Grid>
       <Grid item xs={5}>
-        Test Img
+        <PhotoPixel />
       </Grid>
     </Grid>
   );

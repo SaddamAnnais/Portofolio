@@ -8,7 +8,7 @@ const NormalButton = styled(Button)(({ theme }) => ({
   "&:hover": {
     backgroundColor: "transparent",
     color: "white",
-    textShadow: "0 0 1px white",
+    textShadow: "0 0 2px white",
   },
 }));
 
