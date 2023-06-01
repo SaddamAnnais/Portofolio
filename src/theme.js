@@ -6,7 +6,11 @@ import { chillPixel, publicPixel } from "./font/font";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#D9D9D9",
+      main: "rgba(217, 217, 217, 1)",
+      light: "rgba(217, 217, 217, 0.5)",
+    },
+    secondary: {
+      main: "#11324A",
     },
     background: {
       default: "#11324A",
@@ -17,23 +21,23 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: [chillPixel.style.fontFamily, publicPixel.style.fontFamily],
+    fontFamily: chillPixel.style.fontFamily,
   },
-  shadow: "None",
+  shadows: ["none"],
   components: {
     MuiButton: {
       defaultProps: {
-        disableRipple: true, 
+        disableRipple: true,
         disableElevation: true,
       },
       styleOverrides: {
         root: {
-          "&:hover" : {
+          "&:hover": {
             backgroundColor: "transparent",
           },
-        }
-      }
-    }
+        },
+      },
+    },
   },
 });
 

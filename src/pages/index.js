@@ -1,7 +1,8 @@
-import Navbar from '@/components/Navbar'
-import { chillPixel } from '@/font/font'
-import { Typography } from '@mui/material'
-import Head from 'next/head'
+import Headbar from "@/components/Content/Headbar";
+import Navbar from "@/components/Navbar";
+import { chillPixel } from "@/font/font";
+import { Box, Stack, Typography } from "@mui/material";
+import Head from "next/head";
 export default function Home() {
   return (
     <>
@@ -12,10 +13,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main >
+      <main>
         <Navbar />
-        <Typography >SAasdasd</Typography>
+        {/* <Box display="flex" justifyContent="center" alignItems="center"> */}
+          <Stack spacing={3} width="100%">
+            <Headbar />
+          </Stack>
+        {/* </Box> */}
       </main>
     </>
-  )
+  );
 }

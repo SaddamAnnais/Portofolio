@@ -4,6 +4,7 @@ import localFont from 'next/font/local';
 export const chillPixel = localFont({
   src: 'ChillPixels.otf',
   display: 'swap',
+  // weight: '200',
 });
 
 export const publicPixel = localFont({

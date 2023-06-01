@@ -1,14 +1,15 @@
 import styled from "@emotion/styled";
-import { Button, ButtonBase } from "@mui/material";
+import { Button } from "@mui/material";
 
-const NormalButton = styled(Button)({
-  color: "primary",
+const NormalButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.primary.main,
   backgroundColor: "transparent",
+  textTransform: "none",
   "&:hover": {
     backgroundColor: "transparent",
-    color : "white",
-    textShadow: "0 0 3px white",
-  }
-})
+    color: "white",
+    textShadow: "0 0 1px white",
+  },
+}));
 
 export default NormalButton;
