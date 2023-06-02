@@ -1,18 +1,18 @@
 import { Box, Card, CardMedia, keyframes } from "@mui/material";
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const photoEffect = keyframes`
   0% {
-    width: 0px;
+    opacity: 0;
+    transform: translate(8%, 0%);
   }
   100% {
-    width: 90%;
+    opacity: 1;
+    transform: translate(0px, 0px);
   }
 `;
 
 const PhotoPixel = () => {
-  const [imgTracker, setImgTracker] = useState(0);
   const [hovered, setHovered] = useState(false);
 
   function handleMouseEnter() {
@@ -68,9 +68,8 @@ const PhotoPixel = () => {
             transition: "all 0.2s",
             position: "absolute",
             backgroundPosition: "left",
-            animation: `${photoEffect} 1s ease`,
+            animation: `${photoEffect} 1s ease-out`,
             animationFillMode: "backwards",
-            // clip: "rect(0px,25px,25px,0px)"
           }}
           image={hovered ? "/MePixelNormal.png" : "/MePixelGray.png"}
         />
