@@ -1,5 +1,6 @@
 import Headbar from "@/components/Content/Headbar/Headbar";
 import Navbar from "@/components/Navbar";
+import SocialSidebar from "@/components/SocialSidebar";
 import { chillPixel } from "@/font/font";
 import { Box, Stack, Typography } from "@mui/material";
 import Head from "next/head";
@@ -18,6 +19,7 @@ export default function Home() {
           <Stack spacing={3} width="100%">
             <Headbar />
           </Stack>
+          <SocialSidebar />
       </main>
     </>
   );

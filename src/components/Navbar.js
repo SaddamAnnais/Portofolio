@@ -1,16 +1,27 @@
-import { AppBar, Toolbar } from "@mui/material";
+import { AppBar, Toolbar, keyframes } from "@mui/material";
 import NormalButton from "./NormalButton";
 import CustomButton from "./CustomButton";
+
+const moveIn = keyframes`
+from {
+  transform: translate(0px, -30%);
+  opacity: 0;
+}
+to {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+`;
 
 const Navbar = () => {
   return (
       <AppBar position="static" color="transparent" >
         <Toolbar sx={{justifyContent: 'flex-end',}} >
-          <NormalButton>About</NormalButton>
-          <NormalButton>Experience</NormalButton>
-          <NormalButton>Projects</NormalButton>
-          <NormalButton>Contact</NormalButton>
-          <CustomButton>Resume</CustomButton>
+          <NormalButton animate={`${moveIn} 0.3s ease-in`} >About</NormalButton>
+          <NormalButton animate={`${moveIn} 0.3s ease-in`} >Experience</NormalButton>
+          <NormalButton animate={`${moveIn} 0.3s ease-in`} >Projects</NormalButton>
+          <NormalButton animate={`${moveIn} 0.3s ease-in`} >Contact</NormalButton>
+          <CustomButton sx={{animate:`${moveIn} 0.3s ease-in`}} >Resume</CustomButton>
         </Toolbar>
       </AppBar>
   );

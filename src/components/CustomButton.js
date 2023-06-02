@@ -1,14 +1,15 @@
 import styled from "@emotion/styled";
 import { Button } from "@mui/material";
 
-const StyledButton = styled(Button)(({ theme }) => ({
+const StyledButton = styled(Button)(({ theme, height, padding, width, animate }) => ({
   color: theme.palette.background.default,
   backgroundColor: theme.palette.primary.main,
   borderRadius: 0,
-  minWidth: "5rem",
-  height: "2rem",
-  paddingLeft: "1rem",
-  paddingRight: "1rem",
+  height: height ? height : "2rem",
+  width: width ? width : "auto",
+  minWidth: width ? width : "auto",
+  maxWidth: width ? width : "auto",
+  padding: padding ? padding : "0 1rem",
   marginLeft: "1rem",
   marginRight: "1rem",
   marginTop: "1rem",
@@ -19,7 +20,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
   left: 0,
   transition: "all 0.2s",
   textTransform: "none",
-  // fontWeight: "900",
+  animation: animate,
   "&:hover": {
     backgroundColor: "white",
     top: '-2px',
@@ -29,7 +30,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }));
 
 const CustomButton = (props) => {
-  return <StyledButton>{props.children}</StyledButton>;
+  return <StyledButton {...props.sx} >{props.children}</StyledButton>;
 };
 
 export default CustomButton;
