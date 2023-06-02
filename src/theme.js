@@ -7,7 +7,7 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "rgba(217, 217, 217, 1)",
-      light: "rgba(217, 217, 217, 0.5)",
+      light: "rgba(217, 217, 217, 0.8)",
     },
     secondary: {
       main: "#11324A",

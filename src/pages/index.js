@@ -1,8 +1,8 @@
+import About from "@/components/Content/About/About";
 import Headbar from "@/components/Content/Headbar/Headbar";
 import Navbar from "@/components/Navbar";
 import SocialSidebar from "@/components/SocialSidebar";
-import { chillPixel } from "@/font/font";
-import { Box, Stack, Typography } from "@mui/material";
+import { Stack } from "@mui/material";
 import Head from "next/head";
 export default function Home() {
   return (
@@ -16,8 +16,9 @@ export default function Home() {
 
       <main>
         <Navbar />
-          <Stack spacing={3} width="100%">
+          <Stack spacing={5} width="100%" alignItems="center" >
             <Headbar />
+            <About />
           </Stack>
           <SocialSidebar />
       </main>
