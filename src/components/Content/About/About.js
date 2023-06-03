@@ -1,5 +1,6 @@
 import CustomH2 from "@/components/CustomH2";
 import { Stack, Typography } from "@mui/material";
+import LanguangeTools from "./LanguageTools";
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
         Here are some languages and tools I've used in my 3+ years of coding
         experience, along with my coding activities.
       </Typography>
+      <LanguangeTools />
     </Stack>
   );
 };

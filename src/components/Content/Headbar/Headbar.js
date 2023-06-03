@@ -8,7 +8,7 @@ const Headbar = () => {
       container
       spacing={2}
       maxWidth={{ xs: "100%", md: "85%", lg: "70%" }}
-      mt="4rem"
+      mt="5rem"
       mb="20rem"
     >
       <Grid item xs={8}>
