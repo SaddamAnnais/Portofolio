@@ -10,7 +10,7 @@ const Headbar = () => {
       columns={15}
       maxWidth={{xs: "90%", md: "80%", lg: "70%" }}
       mt={{xs:"3rem", sm: "4rem", md: "5rem"}}
-      mb="20rem"
+      mb={{xs: "9rem", sm: "10rem", md: "20rem"}}
       wrap="wrap-reverse"
       alignItems="center"
       justifyContent="center"

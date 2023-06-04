@@ -4,9 +4,9 @@ import LanguangeTools from "./LanguageTools";
 
 const About = () => {
   return (
-    <Stack maxWidth={{ xs: "100%", md: "85%", lg: "70%" }}>
+    <Stack maxWidth={{xs: "90%", md: "80%", lg: "70%" }} justifyContent="center" alignItems="center">
       <CustomH2>About Me</CustomH2>
-      <Typography color="primary.light" variant="h6" component="p" >
+      <Typography color="primary.light" sx={{ typography: { sm: "h7", lg: "h6" } }} component="p" align="justify" >
         My name is Saddam Annais Shaquille and I'm a third year informatics
         engineering student at Bandung Institute of Technology. I’m interested
         in software engineering, web development, data analysis, and artificial

@@ -17,22 +17,43 @@ import CustomTooltip from "@/components/CustomTooltip";
 const StyledBox = styled(Box)(({ theme, size, padding }) => ({
   backgroundColor: theme.palette.background.paper,
   borderRadius: 0,
-  height: size ? size : "5rem",
-  width: size ? size : "5rem",
+  height: size ? size.xs : "5rem",
+  width: size ? size.xs : "5rem",
   padding: padding ? padding : "1rem",
   margin: 0,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  [theme.breakpoints.up("sm")]: {
+    height: size ? size.sm : "5rem",
+    width: size ? size.sm : "5rem",
+  },
+  [theme.breakpoints.up("md")]: {
+    height: size ? size.md : "5rem",
+    width: size ? size.md : "5rem",
+  },
+  [theme.breakpoints.up("lg")]: {
+    height: size ? size.lg : "5rem",
+    width: size ? size.lg : "5rem",
+  },
+  [theme.breakpoints.up("xl")]: {
+    height: size ? size.xl : "5rem",
+    width: size ? size.xl : "5rem",
+  },
 }));
 
 const Item = (props) => {
   return (
-    <Grid item xs={1.2} height="105px">
+    <Grid item xs={10} sm={4} md={4} lg={2} xl={2}>
       <CustomTooltip
         title={props.title}
         enterDelay={700}
         enterNextDelay={700}
         arrow
       >
-        <StyledBox size="100%">{props.children}</StyledBox>
+        <StyledBox size={{ xs: "6rem", sm: "5rem", md: "7rem", lg: "5rem" }}>
+          {props.children}
+        </StyledBox>
       </CustomTooltip>
     </Grid>
   );
@@ -75,7 +96,7 @@ const RowItem = () => (
 
 const LanguangeTools = (props) => {
   return (
-    <Grid container spacing={2} mt={1} color="primary.light">
+    <Grid container columns={20} spacing={2} mt={1} color="primary.light" maxWidth={{xs:"80%", sm:"80%", md:"80%", lg:"100%", xl:"100%"}}>
       <RowItem />
     </Grid>
   );

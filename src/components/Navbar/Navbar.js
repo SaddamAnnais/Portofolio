@@ -13,7 +13,7 @@ const Navbar = () => {
       const currentScrollPos = window.pageYOffset;
       setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
       setPrevScrollPos(currentScrollPos);
-    }, 10);
+    }, 0);
 
     window.addEventListener("scroll", handleScroll);
 
@@ -36,12 +36,12 @@ const Navbar = () => {
   return (
     <AppBar
       sx={{
-        backdropFilter: "blur(10px)",
-        WebkitBackdropFilter: "blur(10px)",
+        backdropFilter: "blur(5px)",
+        WebkitBackdropFilter: "blur(5px)",
         bgcolor: "transparent",
-        animation: `${moveIn} 0.5s`,
+        animation: `${moveIn} 0.2s`,
         transform: visible ? "translateY(0)" : "translateY(-100%)",
-        transition: "transform 0.5s",
+        transition: "transform 0.35s",
       }}
       color="transparent"
       elevation={0}

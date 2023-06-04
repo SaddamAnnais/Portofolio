@@ -3,7 +3,6 @@ import { useState } from "react";
 import CustomButton from "../CustomButton";
 import NormalButton from "../NormalButton";
 import { Menu as MenuIcon } from "@mui/icons-material";
-import { moveIn } from "./Navbar";
 
 const DrawerContent = () => {
   const [open, setOpen] = useState(false);
@@ -16,7 +15,7 @@ const DrawerContent = () => {
         onClick={() => setOpen(true)}
         component="div"
       >
-        <CustomButton sx={{ margin: "0", animate: `${moveIn} 0.5s ease-in` }}>
+        <CustomButton sx={{ margin: "0" }}>
           <MenuIcon />
         </CustomButton>
       </IconButton>
