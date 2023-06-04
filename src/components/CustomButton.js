@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { Button } from "@mui/material";
 
-const StyledButton = styled(Button)(({ theme, height, padding, width, animate }) => ({
+const StyledButton = styled(Button)(({ theme, height, padding, width, animate, margin }) => ({
   color: theme.palette.background.default,
   backgroundColor: theme.palette.primary.main,
   borderRadius: 0,
@@ -10,10 +10,10 @@ const StyledButton = styled(Button)(({ theme, height, padding, width, animate })
   minWidth: width ? width : "auto",
   maxWidth: width ? width : "auto",
   padding: padding ? padding : "0 1rem",
-  marginLeft: "1rem",
-  marginRight: "1rem",
-  marginTop: "1rem",
-  marginBottom: "1rem",
+  marginLeft: margin ? margin : "1rem",
+  marginRight: margin ? margin : "1rem",
+  marginTop: margin ? margin : "1rem",
+  marginBottom: margin ? margin : "1rem",
   boxShadow: `4px 3px ${theme.palette.primary.light}`,
   position: 'relative',
   top: 0,
