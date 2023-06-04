@@ -2,13 +2,10 @@ import {
   AppBar,
   Toolbar,
   IconButton,
-  Drawer,
   List,
   ListItem,
-  ListItemText,
   keyframes,
   Box,
-  Button,
   SwipeableDrawer,
 } from "@mui/material";
 import { Menu as MenuIcon } from "@mui/icons-material";
@@ -85,7 +82,7 @@ const Navbar = () => {
   );
 
   return (
-    <AppBar position="static" color="transparent" elevation={0}>
+    <AppBar position="static" color="transparent" elevation={0} component="nav">
       <Toolbar sx={{ justifyContent: "flex-end" }}>
         <ListItemContent />
         <DrawerContent />

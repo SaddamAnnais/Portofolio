@@ -7,11 +7,15 @@ const Headbar = () => {
     <Grid
       container
       spacing={2}
-      maxWidth={{ xs: "100%", md: "85%", lg: "70%" }}
-      mt="5rem"
+      columns={15}
+      maxWidth={{xs: "90%", md: "80%", lg: "70%" }}
+      mt={{xs:"3rem", sm: "5rem"}}
       mb="20rem"
+      wrap="wrap-reverse"
+      alignItems="center"
+      justifyContent="center"
     >
-      <Grid item xs={8}>
+      <Grid item md={9} lg={10}>
         <Stack
           spacing={1}
           direction="column"
@@ -22,7 +26,7 @@ const Headbar = () => {
           <TextBanner />
         </Stack>
       </Grid>
-      <Grid item xs={4} >
+      <Grid item md={6} lg={5} >
         <PhotoPixel />
       </Grid>
     </Grid>

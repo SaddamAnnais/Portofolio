@@ -27,8 +27,9 @@ const PhotoPixel = () => {
     <Card
       elevation={0}
       sx={{
-        height: 366,
-        width: 360,
+        // sm: 250,
+        height:{ xs: 282, md: 333, lg: 366},
+        width: { xs: 280, md: 330, lg: 360},
         bgcolor: "transparent",
         position: "relative",
         alignItems: "center",
