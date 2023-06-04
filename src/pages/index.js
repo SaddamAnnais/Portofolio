@@ -1,6 +1,6 @@
 import About from "@/components/Content/About/About";
 import Headbar from "@/components/Content/Headbar/Headbar";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
 import SocialSidebar from "@/components/SocialSidebar";
 import { Stack } from "@mui/material";
 import Head from "next/head";

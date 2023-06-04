@@ -12,7 +12,7 @@ const TextBanner = () => {
   return (
     <>
       <Typography
-        sx={{ typography: { sm:  "h6", lg: "h5" } }}
+        sx={{ typography: { sm: "h6", lg: "h5" } }}
         component="h1"
         color="primary.main"
       >
@@ -22,24 +22,24 @@ const TextBanner = () => {
           finished={() => setStatus1(true)}
         />
       </Typography>
-      {/* <Box > */}
-        <Typography
-          color="background.default"
-          sx={{ typography: { sm:  "h6", lg: "h5" } }}
-          component="h2"
-          className={publicPixel.className}
-          bgcolor={status1 ? "primary.main" : "transparent"} py={1} px={2}
-        >
-          <TextAnimation
-            text="I'm Saddam Annais"
-            start={status1}
-            finished={() => setStatus2(true)}
-          />
-        </Typography>
-      {/* </Box> */}
+      <Typography
+        color="background.default"
+        sx={{ typography: { sm: "h6", lg: "h5" } }}
+        component="h2"
+        className={publicPixel.className}
+        bgcolor={status1 ? "primary.main" : "transparent"}
+        py={1}
+        px={2}
+      >
+        <TextAnimation
+          text="I'm Saddam Annais"
+          start={status1}
+          finished={() => setStatus2(true)}
+        />
+      </Typography>
       <Typography
         color={status2 ? "primary.main" : "transparent"}
-        sx={{ typography: { sm:  "h6", lg: "h5" } }}
+        sx={{ typography: { sm: "h6", lg: "h5" } }}
         component="h3"
       >
         &#x2022;
@@ -51,7 +51,7 @@ const TextBanner = () => {
       </Typography>
       <Typography
         color={status3 ? "primary.main" : "transparent"}
-        sx={{ typography: { sm:  "h6", lg: "h5" } }}
+        sx={{ typography: { sm: "h6", lg: "h5" } }}
         component="h3"
       >
         &#x2022;
