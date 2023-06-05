@@ -9,6 +9,16 @@ import {
   SiTypescript,
   SiPython,
   SiDotnet,
+  SiReact,
+  SiGithub,
+  SiChakraui,
+  SiMui,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiMysql,
+  SiMariadbfoundation,
+  SiGitlab,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { TbSql } from "react-icons/tb";
@@ -44,14 +54,14 @@ const StyledBox = styled(Box)(({ theme, size, padding }) => ({
 
 const Item = (props) => {
   return (
-    <Grid item xs={10} sm={4} md={4} lg={2} xl={2}>
+    <Grid item xs={5} sm={4} md={4} lg={2} xl={2}>
       <CustomTooltip
         title={props.title}
         enterDelay={700}
         enterNextDelay={700}
         arrow
       >
-        <StyledBox size={{ xs: "6rem", sm: "5rem", md: "7rem", lg: "5rem" }}>
+        <StyledBox size={{ xs: "3.5rem", sm: "5rem", md: "6rem", lg: "5rem" }}>
           {props.children}
         </StyledBox>
       </CustomTooltip>
@@ -91,12 +101,49 @@ const RowItem = () => (
     <Item title="Haskell">
       <SiHaskell size="100%" />
     </Item>
+    <Item title="React">
+      <SiReact size="100%" />
+    </Item>
+    <Item title="NodeJs">
+      <SiNodedotjs size="100%" />
+    </Item>
+    <Item title="ExpressJs">
+      <SiExpress size="100%" />
+    </Item>
+    <Item title="MongoDB">
+      <SiMongodb size="100%" />
+    </Item>
+    <Item title="Material UI">
+      <SiMui size="100%" />
+    </Item>
+    <Item title="Chakra UI">
+      <SiChakraui size="100%" />
+    </Item>
+    <Item title="MySQL">
+      <SiMysql size="100%" />
+    </Item>
+    <Item title="MariaDB">
+      <SiMariadbfoundation size="100%" />
+    </Item>
+    <Item title="Github">
+      <SiGithub size="100%" />
+    </Item>
+    <Item title="Gitlab">
+      <SiGitlab size="100%" />
+    </Item>
   </>
 );
 
 const LanguangeTools = (props) => {
   return (
-    <Grid container columns={20} spacing={2} mt={1} color="primary.light" maxWidth={{xs:"80%", sm:"80%", md:"80%", lg:"100%", xl:"100%"}}>
+    <Grid
+      container
+      columns={20}
+      spacing={2}
+      mt={1}
+      color="primary.light"
+      maxWidth={{ xs: "90%", sm: "80%", md: "80%", lg: "100%", xl: "100%" }}
+    >
       <RowItem />
     </Grid>
   );
