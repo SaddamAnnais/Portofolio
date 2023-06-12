@@ -141,6 +141,7 @@ const LanguangeTools = (props) => {
       columns={20}
       spacing={2}
       mt={1}
+      mx="auto"
       color="primary.light"
       maxWidth={{ xs: "90%", sm: "80%", md: "80%", lg: "100%", xl: "100%" }}
     >

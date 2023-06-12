@@ -2,7 +2,7 @@ import About from "@/components/Content/About/About";
 import Headbar from "@/components/Content/Headbar/Headbar";
 import Navbar from "@/components/Navbar/Navbar";
 import SocialSidebar from "@/components/SocialSidebar";
-import { Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import Head from "next/head";
 export default function Home() {
   return (
@@ -16,11 +16,16 @@ export default function Home() {
 
       <main>
         <Navbar />
-          <Stack spacing={5} width="100%" alignItems="center" >
-            <Headbar />
-            <About />
-          </Stack>
-          <SocialSidebar />
+        <Stack
+          spacing={5}
+          width="100%"
+          alignItems="center"
+          sx={{ overflowX: "hidden" }}
+        >
+          <Headbar />
+          <About />
+        </Stack>
+        <SocialSidebar />
       </main>
     </>
   );
