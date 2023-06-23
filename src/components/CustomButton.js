@@ -30,7 +30,7 @@ const StyledButton = styled(Button)(({ theme, height, padding, width, animate, m
 }));
 
 const CustomButton = (props) => {
-  return <StyledButton {...props.sx} >{props.children}</StyledButton>;
+  return <StyledButton {...props.sx} onClick={props.onClick} >{props.children}</StyledButton>;
 };
 
 export default CustomButton;
