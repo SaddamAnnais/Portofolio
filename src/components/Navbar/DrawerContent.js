@@ -3,6 +3,7 @@ import { useState } from "react";
 import CustomButton from "../CustomButton";
 import NormalButton from "../NormalButton";
 import { Menu as MenuIcon } from "@mui/icons-material";
+import { Link } from "react-scroll";
 
 const DrawerContent = () => {
   const [open, setOpen] = useState(false);
@@ -28,10 +29,14 @@ const DrawerContent = () => {
       >
         <List>
           <ListItem sx={{ padding: "0.5rem", justifyContent: "center" }}>
-            <NormalButton>About</NormalButton>
+            <Link to="about">
+              <NormalButton onClick={() => setOpen(false)}>About</NormalButton>
+            </Link>
           </ListItem>
           <ListItem sx={{ padding: "0.5rem", justifyContent: "center" }}>
-            <NormalButton>Experience</NormalButton>
+            <Link to="experience">
+              <NormalButton onClick={() => setOpen(false)}>Experience</NormalButton>
+            </Link>
           </ListItem>
           <ListItem sx={{ padding: "0.5rem", justifyContent: "center" }}>
             <NormalButton>Projects</NormalButton>

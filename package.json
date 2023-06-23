@@ -19,6 +19,7 @@
     "react-dom": "18.2.0",
     "react-github-calendar": "^4.0.0",
     "react-icons": "^4.9.0",
-    "react-reveal": "^1.2.2"
+    "react-reveal": "^1.2.2",
+    "react-scroll": "^1.8.9"
   }
 }

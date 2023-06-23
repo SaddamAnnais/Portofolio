@@ -4,6 +4,7 @@ import { Typography } from "@mui/material";
 const CustomH2 = (props) => {
   return (
     <Typography
+      id={props.id}
       bgcolor="primary.main"
       py={1}
       px={2}

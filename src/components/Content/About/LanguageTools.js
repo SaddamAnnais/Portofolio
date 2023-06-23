@@ -57,8 +57,8 @@ const Item = (props) => {
     <Grid item xs={5} sm={4} md={4} lg={2} xl={2}>
       <CustomTooltip
         title={props.title}
-        enterDelay={700}
-        enterNextDelay={700}
+        enterDelay={500}
+        enterNextDelay={500}
         arrow
       >
         <StyledBox size={{ xs: "3.5rem", sm: "5rem", md: "6rem", lg: "5rem" }}>
@@ -142,7 +142,7 @@ const LanguangeTools = (props) => {
       spacing={2}
       mt={1}
       mx="auto"
-      color="primary.light"
+      color="primary.main"
       maxWidth={{ xs: "90%", sm: "80%", md: "80%", lg: "100%", xl: "100%" }}
     >
       <RowItem />

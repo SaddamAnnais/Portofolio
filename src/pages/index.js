@@ -1,4 +1,5 @@
 import About from "@/components/Content/About/About";
+import Experience from "@/components/Content/Experience/Experience";
 import Headbar from "@/components/Content/Headbar/Headbar";
 import Navbar from "@/components/Navbar/Navbar";
 import SocialSidebar from "@/components/SocialSidebar";
@@ -14,16 +15,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main > 
         <Navbar />
         <Stack
           spacing={5}
           width="100%"
           alignItems="center"
-          sx={{ overflowX: "hidden" }}
         >
           <Headbar />
           <About />
+          <Experience />
         </Stack>
         <SocialSidebar />
       </main>
